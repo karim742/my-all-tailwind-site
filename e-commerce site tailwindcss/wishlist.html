@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./output.css">
+    <title>wishlist</title>
+</head>
+
+<body>
+
+    <!-- header  -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between w-9/12 mx-auto">
+            <!-- logo -->
+            <a href="./index.html"><img src="./image/logo.png" class="w-52 rounded-md"></a>
+            <!-- scarchbar -->
+            <div class="flex w-full mx-w-xl relative">
+                <span class="absolute top-3 left-4 tx-lg text-gray-400"><i class="fas fa-search"></i></span>
+                <input type="text" placeholder="Scarch"
+                    class="w-full border border-red-300 border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none">
+                <button
+                    class="bg-red-400 border border-red-200 text-white px-8 rounded-r-md hover:bg-transparent hover:text-red-500 transition">Scarch</button>
+            </div>
+            <!-- icons -->
+            <div class="flex items-center space-x-4 ml-3">
+                <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wish List</div>
+                    <span
+                        class="absolute -right-1 top-0 w-5 h-5 rounded-full flex items-center justify-center bg-red-400 text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span
+                        class="absolute -right-2 -top-1.5 w-5 h-5 rounded-full flex items-center justify-center bg-red-400 text-white text-xs">8</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-red-500 transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- header  end -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+        <div class="container flex w-9/12 mx-auto">
+            <!-- all catagory -->
+            <div class="px-8 py-4 bg-red-500 flex items-center cursor-pointer relative group">
+                <span class=" text-white"><i class="fas fa-bars"></i></span>
+                <span class="capitalize ml-2 text-white">All Categories</span>
+                <!-- dropdown list  -->
+                <div
+                    class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-200 divide-dashed scale-y-0 origin-top group-hover:scale-y-100 transition duration-300">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./image/bed.png" class="w-5 h-5 object-contain pr-2">
+                        <span class="ml6 text-gray-600 text-sm">Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./image/armchair.png" class="w-5 h-5 object-contain pr-2">
+                        <span class="ml6 text-gray-600 text-sm">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./image/office-building.png" class="w-5 h-5 object-contain pr-2">
+                        <span class="ml6 text-gray-600 text-sm">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./image/landscape.png" class="w-5 h-5 object-contain pr-2">
+                        <span class="ml6 text-gray-600 text-sm">Outdoor</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="./image/mattress.png" class="w-5 h-5 object-contain pr-2">
+                        <span class="ml6 text-gray-600 text-sm">Mattress</span>
+                    </a>
+                </div>
+            </div>
+            <!-- navbar link  -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="./index.html" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="./shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">About Us</a>
+                    <a href="#" class="text-gray-200 hover:text-white transition">Contact Us</a>
+                </div>
+                <div class="text-white">
+                    <div class="flex items-center">
+                        <div class="flex items-center justify-center pr-7">Russel Ahammed</div>
+                        <img src="./image/guyerChair-1.jpg"
+                            class="w-10 h-10 rounded-full border-2 border-white ring-2 ring-gray-300 mr-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breadcrums -->
+    <div class="container w-9/12 mx-auto py-4 flex items-center gap-3">
+        <a href="./index.html" class="text-red-500 text-base"><i class="fas fa-home"></i></a>
+        <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
+        <a href="./account.html">
+            <p class="text-gray-400 font-medium">My Account</p>
+        </a>
+        <span class="text-sm text-gray-400"><i class="fas fa-chevron-right"></i></span>
+        <p class="text-gray-400 font-medium capitalize">Profile Information</p>
+    </div>
+    <!-- breadcrums end -->
+
+    <!-- account box -->
+    <div class="container mx-auto w-9/12">
+        <div class="grid grid-cols-4 gap-10">
+            <!-- account slidebar -->
+            <div class="col-span-1 rounded shadow-md">
+                <div class="flex items-center shadow-md mb-10 px-4 py-3">
+                    <img src="./image/guyerChair-1.jpg"
+                        class="w-10 h-10 rounded-full border border-white ring ring-gray-300 mr-3">
+                    <div class="flex items-center justify-center">
+                        Hello, <br> Russel Ahammed
+                    </div>
+                </div>
+                <div class="divide-y divide-gray-200 mt-3">
+                    <div class="flex items-baseline gap-3 px-3 py-5">
+                        <i class="far fa-address-card"></i>
+                        <div class="grid grid-cols-1">
+                            <a href="./account.html">Manage Account</a>
+                            <a href="./profileinfo.html">Profile Information</a>
+                            <a href="#">Manage Address</a>
+                            <a href="#">Change Password</a>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-3 px-3 py-5">
+                        <i class="fa-sharp fa-solid fa-gift font-bold"></i>
+                        <div class="grid grid-cols-1">
+                            <a href="#" class="font-bold">My Order History</a>
+                            <a href="#">My Returns</a>
+                            <a href="#">My Cancellations</a>
+                            <a href="#">My Reviews</a>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-3 px-3 py-5">
+                        <i class="fa-regular fa-credit-card font-bold"></i>
+                        <div class="grid grid-cols-1">
+                            <a href="#" class="font-bold">Payment Method</a>
+                            <a href="#">Voucher</a>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-3 px-3 py-5">
+                        <i class="far fa-heart font-bold text-red-500"></i>
+                        <div class="grid grid-cols-1">
+                            <a href="#" class="font-bold text-red-500">My Wishlist</a>
+                        </div>
+                    </div>
+                    <div class="flex items-baseline gap-3 px-3 py-5">
+                        <i class="fa-solid fa-right-from-bracket font-bold"></i>
+                        <div class="grid grid-cols-1">
+                            <a href="#" class="font-bold">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- account slidebar end -->
+            <div class="col-span-3">
+                <h3 class="font-bold text-2xl mb-5">Wishlist</h3>
+                <div class="space-y-8">
+                    <div class="border border-gray-300 rounded px-8 py-4">
+                        <div class="flex items-center justify-between gap-5">
+                            <img src="./image/guyerChair-1.jpg" class="w-20">
+                            <div>
+                                <p class="font-medium text-xl uppercase">italian l shape sofa</p>
+                                <p class="text-sm text-gray-500">Availability: <span class="text-green-600">In
+                                        Stock</span>
+                                </p>
+                            </div>
+                            <div class="font-bold text-red-500 text-xl">$320.00</div>
+                            <div class="group">
+                                <a href="#"
+                                    class="px-5 py-3 rounded bg-red-500 text-white flex w-full items-center justify-center group-hover:bg-white border border-red-500 hover:text-red-500 hover:border hover:border-red-500 hover:rounded-b transition">Add
+                                    to
+                                    Cart</a>
+                            </div>
+                            <div class="icon"><i
+                                    class="fas fa-trash text-gray-400 hover:text-gray-600 cursor-pointer transition"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-gray-300 rounded px-8 py-4">
+                        <div class="flex items-center justify-between gap-5">
+                            <img src="./image/guyerChair-1.jpg" class="w-20">
+                            <div>
+                                <p class="font-medium text-xl uppercase">italian l shape sofa</p>
+                                <p class="text-sm text-gray-500">Availability: <span class="text-red-600">Out of
+                                        Stock</span>
+                                </p>
+                            </div>
+                            <div class="font-bold text-red-500 text-xl">$320.00</div>
+                            <div class="group">
+                                <a href="#"
+                                    class="px-5 py-3 rounded bg-red-500 text-white flex w-full items-center justify-center group-hover:bg-white border border-red-500 hover:text-red-500 hover:border hover:border-red-500 hover:rounded-b transition">Add
+                                    to
+                                    Cart</a>
+                            </div>
+                            <div class="icon"><i
+                                    class="fas fa-trash text-gray-400 hover:text-gray-600 cursor-pointer transition"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- account box end -->
+
+
+
+    <!-- footer  -->
+    <footer>
+        <div class="container w-9/12 mx-auto">
+            <div class="grid grid-cols-3 gap-5 pt-10">
+                <!-- single footer box -->
+                <div class="col-span-1">
+                    <div class="space-y-4">
+                        <a href="./index.html"><img src="./image/logo.png" class="w-full"></a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, beatae!</p>
+                        <div class="text-2xl space-x-3">
+                            <a href="#" class="text-gray-500"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="text-gray-500"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-gray-500"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="text-gray-500"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-around">
+                    <div class="space-y-2 grid grid-cols-1">
+                        <a href="#" class="text-gray-400">SOLUTIONS</a>
+                        <a href="#" class="text-gray-600">Merkating</a>
+                        <a href="#" class="text-gray-600">Analytics</a>
+                        <a href="#" class="text-gray-600">Commerce</a>
+                        <a href="#" class="text-gray-600">Insights</a>
+                    </div>
+                    <div class="space-y-2 grid grid-cols-1">
+                        <a href="#" class="text-gray-400">SUPPORT</a>
+                        <a href="#" class="text-gray-600">Pricing</a>
+                        <a href="#" class="text-gray-600">Documentation</a>
+                        <a href="#" class="text-gray-600">Guides</a>
+                        <a href="#" class="text-gray-600">API Status</a>
+                    </div>
+                </div>
+                <div class="col-span-1 flex justify-around">
+                    <div class="space-y-2 grid grid-cols-1">
+                        <a href="#" class="text-gray-400">SOLUTIONS</a>
+                        <a href="#" class="text-gray-600">Merkating</a>
+                        <a href="#" class="text-gray-600">Analytics</a>
+                        <a href="#" class="text-gray-600">Commerce</a>
+                        <a href="#" class="text-gray-600">Insights</a>
+                    </div>
+                    <div class="space-y-2 grid grid-cols-1">
+                        <a href="#" class="text-gray-400">SUPPORT</a>
+                        <a href="#" class="text-gray-600">Pricing</a>
+                        <a href="#" class="text-gray-600">Documentation</a>
+                        <a href="#" class="text-gray-600">Guides</a>
+                        <a href="#" class="text-gray-600">API Status</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class='bg-gray-800 text-white mt-10'>
+        <div class="container w-9/12 mx-auto">
+            <div class="flex items-center justify-between w-full py-2">
+                <p>C RAFCART . All Rights Reserve </p>
+                <img src="./image/paymentMethod.png" class="w-1/4">
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- <script src="./tailwindcdn.js"></script> -->
+</body>
+
+</html>

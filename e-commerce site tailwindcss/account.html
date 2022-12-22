@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>manage account</title>
+  </head>
+
+  <body>
+    <!-- header  -->
+    <header class="bg-white py-4 shadow-sm">
+      <div class="container mx-auto flex w-9/12 items-center justify-between">
+        <!-- logo -->
+        <a href="./index.html"
+          ><img src="./image/logo.png" class="w-52 rounded-md"
+        /></a>
+        <!-- scarchbar -->
+        <div class="mx-w-xl relative flex w-full">
+          <span class="tx-lg absolute top-3 left-4 text-gray-400"
+            ><i class="fas fa-search"></i
+          ></span>
+          <input
+            type="text"
+            placeholder="Scarch"
+            class="w-full rounded-l-md border border-r-0 border-red-300 py-3 pl-12 pr-3 focus:outline-none"
+          />
+          <button
+            class="rounded-r-md border border-red-200 bg-red-400 px-8 text-white transition hover:bg-transparent hover:text-red-500"
+          >
+            Scarch
+          </button>
+        </div>
+        <!-- icons -->
+        <div class="ml-3 flex items-center space-x-4">
+          <a
+            href="#"
+            class="relative text-center text-gray-700 transition hover:text-red-500"
+          >
+            <div class="text-2xl">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wish List</div>
+            <span
+              class="absolute -right-1 top-0 flex h-5 w-5 items-center justify-center rounded-full bg-red-400 text-xs text-white"
+              >8</span
+            >
+          </a>
+          <a
+            href="#"
+            class="relative text-center text-gray-700 transition hover:text-red-500"
+          >
+            <div class="text-2xl">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span
+              class="absolute -right-2 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-400 text-xs text-white"
+              >8</span
+            >
+          </a>
+          <a
+            href="#"
+            class="relative text-center text-gray-700 transition hover:text-red-500"
+          >
+            <div class="text-2xl">
+              <i class="far fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header  end -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+      <div class="container mx-auto flex w-9/12">
+        <!-- all catagory -->
+        <div
+          class="group relative flex cursor-pointer items-center bg-red-500 px-8 py-4"
+        >
+          <span class="text-white"><i class="fas fa-bars"></i></span>
+          <span class="ml-2 capitalize text-white">All Categories</span>
+          <!-- dropdown list  -->
+          <div
+            class="absolute left-0 top-full w-full origin-top scale-y-0 divide-y divide-dashed divide-gray-200 bg-white py-3 shadow-md transition duration-300 group-hover:scale-y-100"
+          >
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+            >
+              <img src="./image/bed.png" class="h-5 w-5 object-contain pr-2" />
+              <span class="ml6 text-sm text-gray-600">Bedroom</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+            >
+              <img
+                src="./image/armchair.png"
+                class="h-5 w-5 object-contain pr-2"
+              />
+              <span class="ml6 text-sm text-gray-600">Sofa</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+            >
+              <img
+                src="./image/office-building.png"
+                class="h-5 w-5 object-contain pr-2"
+              />
+              <span class="ml6 text-sm text-gray-600">Office</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+            >
+              <img
+                src="./image/landscape.png"
+                class="h-5 w-5 object-contain pr-2"
+              />
+              <span class="ml6 text-sm text-gray-600">Outdoor</span>
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-6 py-3 transition hover:bg-gray-100"
+            >
+              <img
+                src="./image/mattress.png"
+                class="h-5 w-5 object-contain pr-2"
+              />
+              <span class="ml6 text-sm text-gray-600">Mattress</span>
+            </a>
+          </div>
+        </div>
+        <!-- navbar link  -->
+        <div class="flex flex-grow items-center justify-between pl-12">
+          <div class="flex items-center space-x-6 capitalize">
+            <a
+              href="./index.html"
+              class="text-gray-200 transition hover:text-white"
+              >Home</a
+            >
+            <a
+              href="./shop.html"
+              class="text-gray-200 transition hover:text-white"
+              >Shop</a
+            >
+            <a href="#" class="text-gray-200 transition hover:text-white"
+              >About Us</a
+            >
+            <a href="#" class="text-gray-200 transition hover:text-white"
+              >Contact Us</a
+            >
+          </div>
+          <div class="text-white">
+            <div class="flex items-center">
+              <div class="flex items-center justify-center pr-7">
+                Russel Ahammed
+              </div>
+              <img
+                src="./image/guyerChair-1.jpg"
+                class="mr-3 h-10 w-10 rounded-full border-2 border-white ring-2 ring-gray-300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- breadcrums -->
+    <div class="container mx-auto flex w-9/12 items-center gap-3 py-4">
+      <a href="./index.html" class="text-base text-red-500"
+        ><i class="fas fa-home"></i
+      ></a>
+      <span class="text-sm text-gray-400"
+        ><i class="fas fa-chevron-right"></i
+      ></span>
+      <a href="#">
+        <p class="font-medium text-gray-400">My Account</p>
+      </a>
+      <span class="text-sm text-gray-400"
+        ><i class="fas fa-chevron-right"></i
+      ></span>
+      <p class="font-medium capitalize text-gray-400">Manage Account</p>
+    </div>
+    <!-- breadcrums end -->
+
+    <!-- account box -->
+    <div class="container mx-auto w-9/12">
+      <div class="grid grid-cols-4 gap-10">
+        <!-- account slidebar -->
+        <div class="col-span-1 rounded shadow-md">
+          <div class="mb-10 flex items-center px-4 py-3 shadow-md">
+            <img
+              src="./image/guyerChair-1.jpg"
+              class="mr-3 h-10 w-10 rounded-full border border-white ring ring-gray-300"
+            />
+            <div class="flex items-center justify-center">
+              Hello, <br />
+              Russel Ahammed
+            </div>
+          </div>
+          <div class="mt-3 divide-y divide-gray-200">
+            <div class="flex items-baseline gap-3 px-3 py-5">
+              <i class="far fa-address-card text-red-500"></i>
+              <div class="grid grid-cols-1">
+                <a href="#" class="font-bold text-red-500">Manage Account</a>
+                <a href="./profileinfo.html">Profile Information</a>
+                <a href="#">Manage Address</a>
+                <a href="#">Change Password</a>
+              </div>
+            </div>
+            <div class="flex items-baseline gap-3 px-3 py-5">
+              <i class="fa-sharp fa-solid fa-gift font-bold"></i>
+              <div class="grid grid-cols-1">
+                <a href="#" class="font-bold">My Order History</a>
+                <a href="#">My Returns</a>
+                <a href="#">My Cancellations</a>
+                <a href="#">My Reviews</a>
+              </div>
+            </div>
+            <div class="flex items-baseline gap-3 px-3 py-5">
+              <i class="fa-regular fa-credit-card font-bold"></i>
+              <div class="grid grid-cols-1">
+                <a href="#" class="font-bold">Payment Method</a>
+                <a href="#">Voucher</a>
+              </div>
+            </div>
+            <div class="flex items-baseline gap-3 px-3 py-5">
+              <i class="far fa-heart font-bold"></i>
+              <div class="grid grid-cols-1">
+                <a href="./wishlist.html" class="font-bold">My Wishlist</a>
+              </div>
+            </div>
+            <div class="flex items-baseline gap-3 px-3 py-5">
+              <i class="fa-solid fa-right-from-bracket font-bold"></i>
+              <div class="grid grid-cols-1">
+                <a href="#" class="font-bold">Logout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- account slidebar end -->
+        <div class="col-span-3">
+          <div class="grid grid-cols-3 gap-7">
+            <div
+              class="col-span-1 rounded border border-gray-200 px-5 py-3 shadow-md"
+            >
+              <div class="flex items-center justify-between">
+                <p class="font-bold">Personal Profle</p>
+                <a href="#" class="font-bold text-red-500">Edit</a>
+              </div>
+              <div class="pt-3 text-gray-500">
+                <b>Russell Ahmed</b>
+                <p>example@gmail.com</p>
+                <p>(123) 456 - 789</p>
+              </div>
+            </div>
+            <div
+              class="col-span-1 rounded border border-gray-200 px-5 py-3 shadow-md"
+            >
+              <div class="flex items-center justify-between">
+                <p class="font-bold">Shipping Address</p>
+                <a href="#" class="font-bold text-red-500">Edit</a>
+              </div>
+              <div class="pt-3 text-gray-500">
+                <b>Russell Ahmed</b>
+                <p>
+                  3891 Ranchiview Dr. Richaradson, Califora <br />
+                  (123) 456 - 789
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-span-1 rounded border border-gray-200 px-5 py-3 shadow-md"
+            >
+              <div class="flex items-center justify-between">
+                <p class="font-bold">Personal Profle</p>
+                <a href="#" class="font-bold text-red-500">Edit</a>
+              </div>
+              <div class="pt-3 text-gray-500">
+                <b>Russell Ahmed</b>
+                <p>3891 Ranchiview Dr. Richaradson, Califora</p>
+                <p>(123) 456 - 789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- account box end -->
+
+    <!-- footer  -->
+    <footer>
+      <div class="container mx-auto w-9/12">
+        <div class="grid grid-cols-3 gap-5 pt-10">
+          <!-- single footer box -->
+          <div class="col-span-1">
+            <div class="space-y-4">
+              <a href="./index.html"
+                ><img src="./image/logo.png" class="w-full"
+              /></a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, beatae!
+              </p>
+              <div class="space-x-3 text-2xl">
+                <a href="#" class="text-gray-500"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="#" class="text-gray-500"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="#" class="text-gray-500"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="text-gray-500"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-1 flex justify-around">
+            <div class="grid grid-cols-1 space-y-2">
+              <a href="#" class="text-gray-400">SOLUTIONS</a>
+              <a href="#" class="text-gray-600">Merkating</a>
+              <a href="#" class="text-gray-600">Analytics</a>
+              <a href="#" class="text-gray-600">Commerce</a>
+              <a href="#" class="text-gray-600">Insights</a>
+            </div>
+            <div class="grid grid-cols-1 space-y-2">
+              <a href="#" class="text-gray-400">SUPPORT</a>
+              <a href="#" class="text-gray-600">Pricing</a>
+              <a href="#" class="text-gray-600">Documentation</a>
+              <a href="#" class="text-gray-600">Guides</a>
+              <a href="#" class="text-gray-600">API Status</a>
+            </div>
+          </div>
+          <div class="col-span-1 flex justify-around">
+            <div class="grid grid-cols-1 space-y-2">
+              <a href="#" class="text-gray-400">SOLUTIONS</a>
+              <a href="#" class="text-gray-600">Merkating</a>
+              <a href="#" class="text-gray-600">Analytics</a>
+              <a href="#" class="text-gray-600">Commerce</a>
+              <a href="#" class="text-gray-600">Insights</a>
+            </div>
+            <div class="grid grid-cols-1 space-y-2">
+              <a href="#" class="text-gray-400">SUPPORT</a>
+              <a href="#" class="text-gray-600">Pricing</a>
+              <a href="#" class="text-gray-600">Documentation</a>
+              <a href="#" class="text-gray-600">Guides</a>
+              <a href="#" class="text-gray-600">API Status</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="mt-10 bg-gray-800 text-white">
+      <div class="container mx-auto w-9/12">
+        <div class="flex w-full items-center justify-between py-2">
+          <p>C RAFCART . All Rights Reserve</p>
+          <img src="./image/paymentMethod.png" class="w-1/4" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- <script src="./tailwindcdn.js"></script> -->
+  </body>
+</html>

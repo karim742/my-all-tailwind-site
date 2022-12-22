@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* group utilites  */ 
+
+.container{
+  @apply mx-auto w-2/3
+}
+
+.catagoryBox {
+  @apply  flex flex-col items-center justify-center text-center bg-no-repeat bg-cover text-white h-[250px] rounded-lg
+}
+
+.serviceDetailsBox {
+    @apply  flex flex-col items-center justify-center text-center bg-no-repeat bg-cover text-white h-[125px] rounded
+}
+
+.reviewCard{
+  @apply flex flex-col gap-y-4 items-center justify-between text-center
+}
+
+.serviceRowWraper {
+  @apply flex items-start justify-between gap-y-5
+}

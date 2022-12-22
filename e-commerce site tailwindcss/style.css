@@ -1,0 +1,18 @@
+.size-selector input:checked+label {
+    background-color: rgb(255, 63, 63);
+    color: white;
+}
+
+.color-selector input:checked+label {
+    border: 2px solid white;
+    outline: 2px solid rgb(255, 63, 63);
+}
+
+.active {
+    background-color: rgb(255, 63, 63) !important;
+    color: white !important;
+}
+
+.border-active {
+    border: 1px solid rgb(255, 63, 63);
+}
